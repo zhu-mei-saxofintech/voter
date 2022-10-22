@@ -11,4 +11,4 @@ if __name__ == '__main__':
     while True:
         with Voter(config) as voter:
             voter.run()
-        sleep(60 + 20 * random())
+        sleep(200 + 20 * random())

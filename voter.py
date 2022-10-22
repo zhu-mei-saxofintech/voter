@@ -30,6 +30,8 @@ class Voter:
         )
         self._vote_loop(set_progress)
         self._logger.info(f"Voting Finished")
+        self._driver.close()
+        self._driver.quit()
 
     def _vote_loop(self, set_progress=None):
         number_of_rounds = self._config.number_of_rounds
